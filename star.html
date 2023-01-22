@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .star-five {
+        margin: 50px;
+        position: relative;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid gold;
+        border-left: 100px solid transparent;
+        transform: rotate(35deg);
+      }
+      .star-five:before {
+        border-bottom: 80px solid gold;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+        top: -45px;
+        left: -65px;
+        content: "";
+        transform: rotate(-35deg);
+      }
+
+      .star-five::after {
+        position: absolute;
+        top: 3px;
+        left: -105px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid gold;
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+        content: "";
+      }
+    </style>
+    <title>Salow Studios</title>
+  </head>
+  <body>
+    <h1>STAR FIVE SIDES</h1>
+    <div class="star-five"></div>
+  </body>
+</html>
